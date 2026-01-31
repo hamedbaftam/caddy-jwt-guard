@@ -1,4 +1,4 @@
-module github.com/YOUR_GITHUB_USERNAME/caddy-jwt-guard
+module github.com/hamedbaftam/caddy-jwt-guard
 
 go 1.22
 

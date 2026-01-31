@@ -17,7 +17,7 @@ go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 export PATH=$PATH:$(go env GOPATH)/bin
 
 echo "🔨 Building Caddy with JWT Guard..."
-xcaddy build --with github.com/YOUR_GITHUB_USERNAME/caddy-jwt-guard=./
+xcaddy build --with github.com/hamedbaftam/caddy-jwt-guard=./
 
 sudo mv caddy /usr/local/bin/caddy-jwt
 sudo chmod +x /usr/local/bin/caddy-jwt
