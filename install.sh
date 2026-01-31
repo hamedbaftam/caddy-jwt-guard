@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+
 echo "🔧 Installing Go..."
 if ! command -v go &>/dev/null; then
   curl -LO https://go.dev/dl/go1.22.1.linux-amd64.tar.gz
@@ -8,6 +9,8 @@ if ! command -v go &>/dev/null; then
 fi
 
 export PATH=$PATH:/usr/local/go/bin
+export GOTOOLCHAIN=local
+
 
 echo "📦 Installing xcaddy..."
 go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
