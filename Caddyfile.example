@@ -1,0 +1,6 @@
+:80 {
+
+	jwt_guard SUPER_SECRET_KEY
+
+	reverse_proxy 127.0.0.1:10000
+}
